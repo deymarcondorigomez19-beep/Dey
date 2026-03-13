@@ -1,0 +1,10 @@
+- listas
+- colas
+- vectores
+
+
+- two pointers
+- busqueda binaria
+- estructuras de datos
+	- map
+	- histograma
