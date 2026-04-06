@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #111;
+    color: white;
+}
+
+/* HEADER */
+header {
+    background: #6a0dad;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* HERO */
+.hero {
+    background: url('https://via.placeholder.com/800x300') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+button {
+    background: #ffcc00;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* SECCIONES */
+section {
+    padding: 30px;
+    text-align: center;
+}
+
+/* ACTIVIDADES (SIN FLEX NI GRID) */
+.card {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: #222;
+    border-radius: 10px;
+}
+
+/* CRONOGRAMA */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* UBICACIÓN */
+img {
+    width: 80%;
+    max-width: 400px;
+}
+
+/* REGISTRO */
+.registro {
+    background: #ff4081;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE (SIN FLEX NI GRID) */
+@media (max-width: 768px) {
+    .card {
+        width: 80%;
+    }
+}
