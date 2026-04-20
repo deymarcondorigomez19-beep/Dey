@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Spa - Registro de Cuenta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor-registro">
+        <h2 style="text-align: center;">Formulario de Inscripción</h2>
+        
+        <form>
+            <fieldset>
+                <legend>Información del Dueño</legend>
+                <div class="campo">
+                    <label>Nombre Completo</label>
+                    <input type="text" placeholder="Ej. Juan Pérez" required>
+                </div>
+                <div class="campo">
+                    <label>Correo Electrónico</label>
+                    <input type="email" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="campo">
+                    <label>Contraseña</label>
+                    <input type="password" placeholder="Mínimo 8 caracteres" minlength="8" required>
+                </div>
+                <div class="campo">
+                    <label>Teléfono</label>
+                    <input type="text" placeholder="555-0123" required>
+                </div>
+                <div class="campo">
+                    <label>Dirección</label>
+                    <input type="text" placeholder="Calle, Ciudad, CP" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información de la Mascota</legend>
+                <div class="campo">
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Nombre de tu peludo" required>
+                </div>
+                <div class="campo">
+                    <label>Especie</label>
+                    <select required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                        <option value="" disabled selected>Selecciona una especie</option>
+                        <option>Perro</option>
+                        <option>Gato</option>
+                        <option>Otro</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label>Raza</label>
+                    <input type="text" placeholder="Ej. Golden Retriever" required>
+                </div>
+                <div class="campo">
+                    <label>Edad</label>
+                    <input type="text" placeholder="Ej. 3 años" required>
+                </div>
+                <div class="campo">
+                    <label>Carácter</label>
+                    <input type="text" placeholder="Ej. Tranquilo, miedoso..." required>
+                </div>
+                <div class="campo">
+                    <label>¿Tiene experiencia en Spa?</label>
+                    <input type="checkbox" style="width: auto;"> Sí, ya ha ido antes.
+                </div>
+                <div class="campo">
+                    <label>Sexo</label>
+                    <input type="radio" name="sexo" required> Macho
+                    <input type="radio" name="sexo" required> Hembra
+                </div>
+            </fieldset>
+
+            <a href="#bienvenida" class="boton-registro" style="display: block; text-align: center; text-decoration: none;">
+                Registrar a mi Mascota
+            </a>
+        </form>
+
+        <div id="bienvenida" class="overlay">
+            <div class="popup">
+                <h2>🐾 ¡Bienvenido a la Familia!</h2>
+                <p>Tu registro ha sido procesado con éxito.</p>
+                <p>Estamos listos para darle a tu mascota el día de spa que se merece.</p>
+                <a class="cerrar" href="index.html">Comenzar ahora</a>
+            </div>
+        </div>        
+
+        <div class="enlaces" style="text-align: center; margin-top: 20px;">
+            <a href="index.html">Ya tengo cuenta, iniciar sesión</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,62 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Spa - Iniciar Sesión</title>
     <link rel="stylesheet" href="style.css">
-    <title>Documento</title>
 </head>
-
 <body>
-
-    <h1>Login</h1>
-
-    <form action="">
-        <label for="">Nombre:</label><br>
-        <input type="text" placeholder="Nombre" maxlength="8"><br>
-
-        <label for="">Correo:</label><br>
-        <input type="email" placeholder="example@gmail.com"><br>
-
-        <label for="">Usuario:</label><br>
-        <input type="text" placeholder="Usuario" maxlength="8"><br>
-
-        <label for="">Contraseña:</label><br>
-        <input type="password" placeholder="Contraseña" maxlength="8" required><br>
-
-        <label for="">Carrera:</label><br>
-
-        <input type="radio" name="carrera">
-        <label for="">Artes</label><br>
-
-        <input type="radio" name="carrera">
-        <label for="">Informatica</label><br>
-
-        <input type="radio" name="carrera">
-        <label for="">Ing. comercial</label><br>
-
-        <label for="">Elegir ciudad:</label>
-
-        <select name="" id="">
-            <option value="">La paz</option>
-            <option value="">Cochabamba</option>
-            <option value="">Santa cruz</option>
-            <option value="">Oruro</option>
-            <option value="">Potosi</option>
-            <option value="">Tarija</option>
-            <option value="">Beni</option>
-            <option value="">Pando</option>
-            <option value="">Chuquisaca</option>
-        </select><br>
-
-        <label for="">Observaciones</label><br>
-        <textarea name="" id=""></textarea><br>
-
-        <input type="submit" value="enviar">
-        <input type="reset" value="limpiar">
-
-        
-    </form>
+    <div class="contenedor-login">
+        <h2>Login</h2>
+        <p>Ingresa para consentir a tu mejor amigo</p>
+        <form>
+            <div class="campo">
+                <label>Usuario / Email</label>
+                <input type="text" placeholder="Ej: Firulais123" required>
+            </div>
+            <div class="campo">
+                <label>Contraseña</label>
+                <input type="password" placeholder="********" minlength="8" required>
+            </div>
+            <button type="submit">Entrar al Spa</button>
+        </form>
+        <div class="enlaces">
+            <a href="recuperar.html">¿Olvidaste tu contraseña?</a><br><br>
+            <span>¿Eres nuevo? <a href="registro.html">Regístrate aquí</a></span>
+        </div>
+    </div>
 </body>
 </html>

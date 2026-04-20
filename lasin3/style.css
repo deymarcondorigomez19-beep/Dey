@@ -1,0 +1,252 @@
+:root {
+    --color-primario: #ff9a9e; /* Rosa patitas */
+    --color-secundario: #a1c4fd; /* Azul burbujas */
+    --color-fondo: #f9f9f9;
+    --color-texto: #333;
+    --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-principal);
+    color: var(--color-texto);
+    margin: 0;
+    text-align: center; /* Centrado clásico */
+}
+
+.contenedor-login {
+    background-color: white;
+    width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: var(--color-primario);
+}
+
+.campo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--color-primario);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #f88389;
+}
+
+.enlaces {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+a {
+    color: var(--color-secundario);
+    text-decoration: none;
+}
+
+
+
+/* formualrio de registro */
+
+/* --- Nuevos estilos para el Formulario de Registro --- */
+.contenedor-registro {
+    background-color: white;
+    width: 800px; /* Más ancho para las dos columnas */
+    margin: 50px auto;
+    padding: 30px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 44%; /* Casi la mitad para que quepan dos */
+    display: inline-block;
+    vertical-align: top; /* Alinea los grupos por la parte superior */
+}
+
+legend {
+    font-weight: bold;
+    color: var(--color-primario);
+    padding: 0 10px;
+}
+
+/* Ajuste para que los inputs ocupen el ancho del fieldset */
+fieldset input, fieldset select {
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+.boton-registro {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* formulario de registro fin  */
+
+/* mesaje de bienvenida */
+
+/* --- Estilos para el Mensaje de Bienvenida (Modal) --- */
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    /* Oculto por defecto */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 500ms;
+}
+
+/* Cuando el ID "bienvenida" es el objetivo de la URL */
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    margin: 150px auto;
+    padding: 40px;
+    background: #fff;
+    border-radius: 20px;
+    width: 40%;
+    position: relative;
+    text-align: center;
+    border: 4px solid var(--color-primario);
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: var(--color-primario);
+}
+
+.popup .cerrar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--color-secundario);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* correccion color boton registro  */
+
+
+/* Unificamos el estilo para botones reales y enlaces que parecen botones */
+.boton-registro, .cerrar {
+    display: block;
+    background-color: var(--color-primario);
+    color: white !important; /* Forzamos el color blanco sobre el azul de los links */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none; /* Quita el subrayado del link */
+    cursor: pointer;
+    width: 95%; /* Ajuste para que cuadre con los inputs */
+    margin: 20px auto 0 auto;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efecto al pasar el mouse */
+.boton-registro:hover, .cerrar:hover {
+    background-color: #f88389; /* Un tono más claro del rosa */
+    color: white;
+}
+
+/* Efecto de pulsación */
+.boton-registro:active, .cerrar:active {
+    transform: scale(0.98);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Validación Estética de Campos --- */
+
+/* Estilo base para todos los inputs para evitar saltos visuales */
+input {
+    transition: all 0.3s ease; /* Suaviza el cambio de color al escribir */
+    border: 1px solid #ddd;
+}
+
+/* Campos obligatorios que aún no son válidos (mientras el usuario no escribe o escribe mal) */
+input:required:invalid {
+    border-color: var(--color-primario);
+    background-color: #fffafb; /* Un toque rosado casi imperceptible */
+    box-shadow: 0 0 5px rgba(255, 154, 158, 0.2); /* Resplandor suave rosa */
+}
+
+/* Campos obligatorios ya llenos correctamente */
+input:required:valid {
+    border-color: #76d7c4; /* Un verde menta más suave que el verde estándar */
+    background-color: #f4fdfb;
+    box-shadow: 0 0 5px rgba(118, 215, 196, 0.2); /* Resplandor suave menta */
+}
+
+/* Estilo del Asterisco Obligatorio */
+label:after {
+    content: "*";
+    color: var(--color-primario);
+    font-size: 14px;
+    margin-left: 4px;
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top; /* Lo posiciona ligeramente arriba como superíndice */
+}
+
+/* Efecto Focus: Cuando el usuario hace clic en el campo, el borde destaca */
+input:focus {
+    outline: none;
+    border-color: var(--color-secundario);
+    box-shadow: 0 0 8px rgba(161, 196, 253, 0.5);
+}
